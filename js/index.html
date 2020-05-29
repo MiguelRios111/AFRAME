@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="conjunto" src="images/conjunto.jpg">
+            <img id="canada" src="images/canada.jpg" >
+            <img id="heliken" src="images/heliken.jpg" >
+            <img id="salvador" src="images/salvador.jpg" >
+        </a-assets>
+    
+        <a-image src="#conjunto" position="-1.5 1.5 -3" onclick="show('conjunto')" ></a-image>
+        <a-image src="#canada" position="0 1.5 -3" onclick="show('canada')"></a-image>
+        <a-image src="#heliken" position="1.5 1.5 -3" onclick="show('heliken')"></a-image>
+        <a-image src="#salvador" position="3 1.5 -3" onclick="show('salvador')"></a-image>
+    
+    
+        <a-sky id="sky" src="#conjunto"></a-sky>
+        <a-camera>
+            <a-cursor color="black"></a-cursor>
+        </a-camera>
+    </a-scene>
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+  
+    <script src="js/tour.js"></script>
+</body>
+</html>
